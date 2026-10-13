@@ -18,7 +18,7 @@ The node source code (`worrelld`) is in
 |-------|-------|
 | Chain ID | `worrell-testnet-1` |
 | Binary | `worrelld` (Cosmos SDK v0.53.6) |
-| Source / version | [worrellchain/worrell](https://github.com/worrellchain/worrell) @ `v0.1.2` ([prebuilt binaries](https://github.com/worrellchain/worrell/releases/tag/v0.1.2)) |
+| Source / version | [worrellchain/worrell](https://github.com/worrellchain/worrell) @ `v0.1.3` ([prebuilt binaries](https://github.com/worrellchain/worrell/releases/tag/v0.1.3)) since block `1186000` (upgrade of 13 October 2026). A node syncing from genesis must run `v0.1.2` until that height and then switch to `v0.1.3`; see the [upgrade guide](https://github.com/worrellchain/worrell/blob/main/docs/UPGRADES.md). Nodes that use State Sync from a recent snapshot start directly with `v0.1.3` |
 | Genesis | [`worrell-testnet-1/genesis.json`](worrell-testnet-1/genesis.json) |
 | Genesis sha256 | `a81c507b12ba0678c3172394ff4bb03e1c3db60050cc5568c127a24ec19378fd` |
 | Persistent peer | `bb9164c1bd9ed9ff2c0fd9e09b23285698e231de@164.68.98.186:26656` |
