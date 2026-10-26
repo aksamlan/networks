@@ -10,15 +10,26 @@ The node source code (`worrelld`) is in
 
 | Network | Folder | Chain ID | Status |
 |---------|--------|----------|--------|
-| Testnet | [`worrell-testnet-1/`](worrell-testnet-1/) | `worrell-testnet-1` | Active |
+| Testnet 1 | [`worrell-testnet-1/`](worrell-testnet-1/) | `worrell-testnet-1` | Active until 24 November 2026 |
+| Testnet 2 | [`worrell-testnet-2/`](worrell-testnet-2/) | `worrell-testnet-2` | Genesis ceremony (see the [guide](worrell-testnet-2/README.md)) |
 
-## Join the testnet
+## worrell-testnet-2: genesis ceremony
+
+`worrell-testnet-2` starts the way mainnet will: validators submit a gentx during a sign-up
+window, the final genesis is published with its sha256, and every node starts at the same
+time. Joining is open to every validator. Dates (UTC), parameters and the step-by-step
+procedure are in [`worrell-testnet-2/README.md`](worrell-testnet-2/README.md). Gentx files go
+to [`worrell-testnet-2/gentx/`](worrell-testnet-2/gentx/) by pull request (window: 27 October
+to 6 November 2026, 10:00 UTC; network start: 10 November 2026, 08:00 UTC). `worrell-testnet-1`
+keeps running until 24 November 2026.
+
+## Join worrell-testnet-1
 
 | Field | Value |
 |-------|-------|
 | Chain ID | `worrell-testnet-1` |
 | Binary | `worrelld` (Cosmos SDK v0.53.6) |
-| Source / version | [worrellchain/worrell](https://github.com/worrellchain/worrell) @ `v0.1.3` ([prebuilt binaries](https://github.com/worrellchain/worrell/releases/tag/v0.1.3)) since block `1186000` (upgrade of 13 October 2026). A node syncing from genesis must run `v0.1.2` until that height and then switch to `v0.1.3`; see the [upgrade guide](https://github.com/worrellchain/worrell/blob/main/docs/UPGRADES.md). Nodes that use State Sync from a recent snapshot start directly with `v0.1.3` |
+| Source / version | [worrellchain/worrell](https://github.com/worrellchain/worrell) @ `v0.1.3` ([prebuilt binaries](https://github.com/worrellchain/worrell/releases/tag/v0.1.3)) since block `1186000` (upgrade of 13 October 2026). A node syncing from genesis must run `v0.1.2` until that height and then switch to `v0.1.3`; see the [upgrade guide](https://github.com/worrellchain/worrell/blob/main/docs/UPGRADES.md). Nodes that use State Sync from a recent snapshot start directly with `v0.1.3`. `v0.2.0` (a packaging release with the same consensus rules: static binaries, unified application name) is also compatible and can replace `v0.1.3` at any time, without a coordinated upgrade |
 | Genesis | [`worrell-testnet-1/genesis.json`](worrell-testnet-1/genesis.json) |
 | Genesis sha256 | `a81c507b12ba0678c3172394ff4bb03e1c3db60050cc5568c127a24ec19378fd` |
 | Persistent peer | `bb9164c1bd9ed9ff2c0fd9e09b23285698e231de@164.68.98.186:26656` |
